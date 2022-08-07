@@ -1,2 +1,5 @@
-package Collection.List;public class MapTest {
+package Collection.List;
+
+public class MapTest {
+
 }
