@@ -1,6 +1,6 @@
 package JavaProgrammes;
 
-import org.testng.annotations.Test;
+import org.junit.Test;
 
 public class StringMethods {
 
@@ -23,7 +23,7 @@ public class StringMethods {
         System.out.println(str.charAt(4)); //This will return character present at index 4
     }
 
-    @Test(description = "It is used to find index of FIRST occurrence of character in string")
+    @Test()
     public void indexOfChar() {
         String str = "aevinash ashine";
         System.out.println(str.indexOf('v')); //This will return index of first occurrence of character v from string
@@ -32,11 +32,11 @@ public class StringMethods {
         System.out.println(str.indexOf('e', 2));
     }
 
-    @Test(description = "It is used to find index of LAST occurrence of character in string")
+    @Test()
     public void lastIndexOf() {
-        String str = "avinash takale";
+        String str = "aviainash takale";
         System.out.println(str.lastIndexOf('e'));
-        System.out.println("last index of a from index 8 is ->" + str.lastIndexOf('a', 4));
+        System.out.println("last index of a from index 8 is ->" + str.lastIndexOf('i', 2));
         System.out.println(str.lastIndexOf("ashine"));
         System.out.println(str.lastIndexOf("in", 1));
         System.out.println("code point at -> " + str.codePointAt(5) + " " + str.charAt(5));

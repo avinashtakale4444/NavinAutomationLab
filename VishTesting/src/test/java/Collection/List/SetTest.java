@@ -1,15 +1,16 @@
 package Collection.List;
 
-import org.testng.annotations.Test;
+import org.junit.Test;
 
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.Map;
 import java.util.Set;
 
 public class SetTest {
     @Test
     public void testSet() {
-        Set set = new HashSet();
+        Set<Integer> set = new HashSet();
         set.add(2);
         set.add(12);
         set.add(6);
@@ -23,5 +24,6 @@ public class SetTest {
         set1.addAll(set);
         set1.remove(2);
         System.out.println(set1);
+
     }
 }
